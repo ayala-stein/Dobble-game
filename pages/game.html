@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="project.js"></script>
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="putPictures(),updateTimer()" >
+
+  <div id="darkbackgroung_gameOver">
+        <div id="gameover">
+          <h1 style="text-align: center;margin-top: -25px;">
+            <span>G</span>
+            <span>A</span>
+            <span>M</span>
+            <span>E</span>
+            <br />
+            <span>O</span>
+            <span>V</span>
+            <span>E</span>
+            <span>R</span>
+          </h1>
+        </div>
+        <img id="winner1"  src="../images/winner.png">
+        <img id="winner2"  src="../images/winner.png">
+        <div id="messageScore"></div>
+        <div id="posbuttons">
+        <a href="project.html"><button id="button2">exit</button></a>
+        <a href="game.html"><button id="button2">try again</button></a>
+        </div>
+      </div>
+
+    <div class="game-board">
+      <div style="grid-template-columns: auto auto auto;">
+        <div id="score">your score is: 0</div>
+        <div id="timer" class="timerStyle"></div>
+       <a href="project.html"> <div id="logo"><img src="../images/double.png" ></div></a>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="ink" id="c1" onclick="check('c1')"></div>
+          <div class="ink" id="c2" onclick="check('c2')"></div>
+          <div class="ink" id="c3" onclick="check('c3')"></div>
+          <div class="ink" id="c4" onclick="check('c4')"></div>
+          <div class="ink" id="c5" onclick="check('c5')"></div>
+          <div class="ink" id="c6" onclick="check('c6')"></div>
+          <div class="ink" id="c7" onclick="check('c7')"></div>
+          <div class="ink" id="c8" onclick="check('c8')"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="ink" id="c9"  onclick="check('c9')"></div>
+          <div class="ink" id="c10" onclick="check('c10')"></div>
+          <div class="ink" id="c11" onclick="check('c11')"></div>
+          <div class="ink" id="c12" onclick="check('c12')"></div>
+          <div class="ink" id="c13" onclick="check('c13')"></div>
+          <div class="ink" id="c14" onclick="check('c14')"></div>
+          <div class="ink" id="c15" onclick="check('c15')"></div>
+          <div class="ink" id="c16" onclick="check('c16')"></div>
+        </div>
+      </div>
+    </div>
+    
+   
+  </body>
+</html>
